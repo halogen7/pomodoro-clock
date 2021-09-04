@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import Clock from '../components/clock';
+import Pomodoro from '../components/Pomodoro';
 
 export const indexPageQuery = graphql`
     query IndexPageQuery {
@@ -17,7 +17,7 @@ const IndexPage: React.FC = () => {
     return (
         <>
             <h1>POMODORO CLOCK</h1>
-            <Clock />
+            <Pomodoro />
         </>
     );
 };
